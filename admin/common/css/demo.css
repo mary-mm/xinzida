@@ -1,0 +1,24 @@
+body {
+    font-family:verdana,helvetica,arial,sans-serif;
+    padding:1.25rem;
+    font-size:0.75rem;
+    margin:0;
+}
+h2 {
+    font-size:1.125rem;
+    font-weight:bold;
+    margin:0;
+    margin-bottom:0.9375rem;
+}
+.demo-info{
+    padding:0 0 0.75rem 0;
+}
+.demo-tip{
+    display:none;
+}
+.label-top{
+    display: block;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    vertical-align: middle;
+}

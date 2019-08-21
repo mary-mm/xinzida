@@ -1,0 +1,28 @@
+.monitor_temperature{
+    width: auto;
+}
+.monitoring_content>div{
+}
+.monitoring_content>div>div{
+}
+.mode_lable {
+    line-height: 2.25rem;
+}
+.select_light_mode .combo-arrow{
+    height: 2.125rem!important;
+}
+.edit_item_input>label{
+    line-height: 2.8125rem;
+}
+.nav-medium .user_content > .edit_user_title {
+    margin-top: 3.125rem;
+}
+.monitor_temperature{
+    max-width: 40%;
+}
+.tab_form input[type="text"] {
+    padding: 0 0.5rem;
+}
+.lamp_list #toolbar {
+    margin-top: 0.0625rem;
+}

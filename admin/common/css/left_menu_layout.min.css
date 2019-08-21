@@ -1,0 +1,541 @@
+.nav-small{
+    transition: 1s;
+}
+.nav-medium .medium-logo {
+    display: block
+}
+.nav-medium .medium-logo img {
+    width: 6.25rem;
+    margin: 0.4375rem 0.3125rem 0.3125rem 0.9375rem
+}
+.nav-medium .small-logo {
+    display: none
+}
+.nav-medium .container.body .col-md-3.left_color {
+    height: 100%;
+    width: 14.875rem;
+    padding: 0;
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    background: #1D2939;
+    /*overflow: scroll;
+     */
+}
+.nav-small .container.body .col-md-3.left_color{
+    width: 0;
+    display: none;
+}
+.nav-medium .container.body .col-md-3.left_color .menu_fixed {
+    height: 100%;
+    position: fixed
+}
+.nav-medium .container.body .right_color {
+    padding: 0.625rem 1.25rem 0;
+    margin-left: 14.875rem;
+    background-color: #eceff4;
+    padding-top: 1.5rem;
+}
+.nav-medium ul.nav.child_menu li:before {
+    background: #1caf9a;
+    bottom: auto;
+    content: "";
+    height: 0.5rem;
+    left: 1.125rem;
+    margin-top: 0.9375rem;
+    position: absolute;
+    right: auto;
+    width: 0.5rem;
+    z-index: 1;
+    border-radius: 50%
+}
+.nav-medium ul.nav.child_menu li:after {
+    border-left: 0.0625rem solid #1caf9a;
+    bottom: 0;
+    content: "";
+    left: 1.375rem;
+    position: absolute;
+    top: 0
+}
+.nav-medium ul.nav.child_menu li:last-child::after {
+    bottom: 50%
+}
+.menu_section {
+    margin-bottom: 0.9375rem
+}
+.menu_section h3 {
+    padding-left: 0.9375rem;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    letter-spacing: .0.3125rem;
+    font-weight: normal;
+    font-size: 0.6875rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-shadow: 0.0625rem 0.0625rem #000
+}
+.main_menu span.fa {
+    float: right;
+    text-align: center;
+    margin-top: 0.4375rem;
+    font-size: 0.625rem;
+    min-width: inherit;
+    color: #c4cfda
+}
+.active > a > span.fa::before {
+    content: "\f078"
+}
+.nav_menu {
+    height: 3.125rem;
+    float: left;
+    background: #1caf9a;
+    border-bottom: 0.0625rem solid #d9dee4;
+    width: 100%;
+    position: relative
+}
+.nav_title {
+    width: 14.875rem;
+    float: left;
+    border-radius: 0;
+    height: 3.125rem;
+    border-bottom: 0.0625rem solid;
+    margin-bottom: 0
+}
+.container {
+    width: 100%;
+    padding: 0
+}
+.navbar-brand, .navbar-nav > li > a {
+    color: #fff
+}
+.top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover, .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover {
+    background: #d9dee4
+}
+.nav-medium .main_container .top_nav {
+    display: block;
+    margin-left: 14.875rem
+}
+.nav.side-menu > li {
+    cursor: pointer
+}
+.nav.side_menu > li {
+    padding: 0 0.625rem 0 0.75rem;
+    box-sizing: border-box;
+}
+.nav.side-menu > li > a:hover {
+    color: #f2f5f7
+}
+.nav.side-menu > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background: 0 0
+}
+.nav.side_menu > li > a:hover, .nav > li > a:focus {
+    background: #1caf9a;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+.side_menu>li>.child_menu>li:hover{
+    background: #1caf9a;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+.side_menu>li>.child_menu{
+    padding-right: 0;
+}
+.nav.child_menu {
+    display: none
+}
+.nav.child_menu li {
+    padding-left: 2.25rem
+}
+.nav.child_menu li.active, .nav.child_menu li:hover {
+    background-color: rgba(255, 255, 255, .06)
+}
+.nav.child_menu li li.active, .nav.child_menu li li:hover {
+    background: 0 0
+}
+.nav.child_menu li li a.active, .nav.child_menu li li a:hover {
+    color: #fff
+}
+.nav.child_menu > li > a {
+    color: rgba(255, 255, 255, .75);
+    font-size: 0.75rem;
+    padding: 0.375rem
+}
+.nav.child_menu > li > a, .nav.side-menu > li > a {
+    color: #8F939E;
+    padding: 0.625rem 0.9375rem
+}
+.nav.child_menu > li > a, .nav.side_menu > li > a {
+    padding: 0.875rem 0.75rem;
+    font-size: 0.875rem;
+}
+.nav.side-menu > li > a > i {
+    font-size: 1rem;
+    margin-right: 0.625rem
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 0.8125rem 0.9375rem 0.75rem
+}
+.nav.side-menu > li.active, .nav.side-menu > li.current-page {
+    border-left: 0.3125rem solid #1caf9a;
+    padding: 0
+}
+.nav.side_menu > li.active, .nav.side_menu > li.current-page {
+    border-left: 0;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+}
+.nav.side_menu > li.active a, .nav.side_menu > li.current-page a {
+    background: #1caf9a;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+.nav.side_menu > li.current-page> .child_menu> li a,.side_menu > li.active > .child_menu> li a{
+    background: rgba(255, 255, 255, .05)
+}
+.nav li.current-page {
+    background: rgba(255, 255, 255, .05)
+}
+.nav li li li.current-page {
+    background: 0 0
+}
+.nav li li.current-page a {
+    color: #fff
+}
+.nav.side-menu > li.active > a {
+    text-shadow: rgba(0, 0, 0, .25) 0 -0.0625rem 0;
+    box-shadow: rgba(0, 0, 0, .25) 0 0.0625rem 0, inset rgba(255, 255, 255, .16) 0 0.0625rem 0
+}
+.navbar-brand, .navbar-nav > li > a {
+    font-weight: 500;
+    color: #ecf0f1;
+    margin-left: 0;
+    line-height: 2rem
+}
+.sidebar-footer {
+    bottom: 0;
+    clear: both;
+    display: block;
+    padding: 0.3125rem 0 0 0;
+    position: fixed;
+    width: 14.875rem;
+    z-index: 999
+}
+.sidebar-footer a {
+    padding: 0.4375rem 0 0.1875rem;
+    text-align: center;
+    width: 25%;
+    font-size: 1.0625rem;
+    display: block;
+    float: left;
+    background: #325a94;
+    cursor: pointer;
+    color: #ccc
+}
+.sidebar-footer a:hover {
+    background: #1caf9a;
+    color: #fff
+}
+.nav.navbar-nav > li > a {
+    color: #515356
+}
+.nav.top_menu > li > a {
+    position: relative;
+    display: block;
+    padding: 0.625rem 0.9375rem;
+    color: #34495e
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent
+}
+.page-main-header {
+    width: 100%;
+    position: relative;
+    display: table;
+    padding: 0.9375rem 0
+}
+.page-main-header .page-name-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.375rem;
+    float: left;
+    line-height: 2.1875rem
+}
+.page-main-header .page-name-title:first-letter {
+    font-size: 1.875rem;
+    color: #1caf9a
+}
+.page-main-header .breadcrumb {
+    float: right;
+    padding-top: 0;
+    background: 0 0;
+    margin-bottom: 0
+}
+.footer {
+    margin-left: 14.875rem;
+    width: auto
+}
+nav .toggle {
+    float: left
+}
+nav .toggle a {
+    cursor: pointer;
+    padding: 0.4375rem 0.9375rem 0 0.9375rem;
+    line-height: 2.8125rem;
+    overflow: hidden;
+    display: inline-table
+}
+nav .toggle a:hover {
+    background: rgba(255, 255, 255, .2)
+}
+nav .toggle a i {
+    color: #fff;
+    font-size: 1.5625rem
+}
+.topbar-right .navbar-right {
+    margin: 0
+}
+.responsive-logo img {
+    display: none
+}
+.header-notification .dropdown-menu .default-scroll .list-group-item:before {
+    background: #1caf9a;
+    bottom: auto;
+    content: "";
+    width: 0.625rem;
+    height: 0.625rem;
+    left: 1.125rem;
+    margin-top: 1.125rem;
+    position: absolute;
+    right: auto;
+    z-index: 1;
+    border-radius: 50%
+}
+.header-notification .dropdown-menu .default-scroll .list-group-item:after {
+    border-left: 0.125rem solid #1caf9a;
+    bottom: 0;
+    content: "";
+    left: 1.375rem;
+    position: absolute;
+    top: 0
+}
+.header-notification .dropdown-menu .default-scroll .media > .pull-left {
+    padding-left: 1.25rem
+}
+@media (max-width: 85.375rem) {
+    .header-notification .dropdown-menu .default-scroll .media > .pull-left {
+        padding-left: 1.875rem
+    }
+}
+@media (max-width: 61.9375rem) {
+    .nav-medium .container.body .right_color, .nav-medium .container.body .top_nav {
+        width: 100%;
+        margin: 0
+    }
+    .nav-medium .container.body .col-md-3.left_color {
+        display: none
+    }
+    .nav-medium .footer {
+        margin-left: 0
+    }
+}
+@media (min-width: 48rem)and (max-width: 63.9375rem){
+    .nav-medium .page_title {
+        width: 100%!important;
+        background: #F7F7F7;
+        float: right;
+        padding: 0 0.75rem;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 47.9375rem) {
+    .topbar-right {
+        background: 0 0;
+        float: right;
+        width: auto
+    }
+    .page-main-header {
+        text-align: center;
+        display: inline-grid
+    }
+}
+@media (max-width: 29.9375rem) {
+    .nav_menu {
+        position: static
+    }
+    nav .toggle a {
+        padding: 0.625rem 0.625rem 0 0.625rem;
+        line-height: 2.4375rem;
+        position: relative;
+        z-index: 9
+    }
+    .topbar-right {
+        background: #061b39;
+        width: 100%
+    }
+    .nav-medium .container.body .right_color, .nav-small .container.body .right_color {
+        padding: 3rem 0.9375rem 0
+    }
+    .topbar-right .navbar-right {
+        padding-right: 0.125rem
+    }
+    .topbar-right .navbar-right .header-search .search-box {
+        padding: 0.5rem 0.3125rem 0 0;
+        margin: 0
+    }
+    .page-main-header {
+        padding: 0.625rem 0
+    }
+    .responsive-logo {
+        float: right;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 0
+    }
+    .responsive-logo img {
+        display: block;
+        width: 6.25rem
+    }
+    .toggle .responsive-logo a:hover {
+        background: 0 0
+    }
+    .nav-small .responsive-logo {
+        width: 85%
+    }
+    .nav-small #scroll {
+        right: 1.5625rem
+    }
+    .footer {
+        padding: 0.625rem 0;
+        font-size: 0.625rem
+    }
+}
+.bg_orange{
+    background: #D9534F;
+}
+.bg_blue{
+    background: #428BCA;
+}
+.bg_black{
+    background: #1D2939;
+}
+// // Modals // -------------------------------------------------- // .modal-open - body class for killing the scroll // .modal - container to scroll within // .modal-dialog - positioning shell for the actual modal // .modal-content - actual modal w/ bg and corners and shit // Kill the scroll on the body .modal-open {
+                                                                                                                                                                                                                                                                                          overflow: hidden;
+                                                                                                                                                                                                                                                                                      }
+// Container that the modal scrolls within .modal {
+       display: none;
+       overflow: hidden;
+       position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       z-index: @zindex-modal;
+       -webkit-overflow-scrolling: touch;
+   // Prevent Chrome on Windows from adding a focus outline. For details, see // https://github.com/twbs/bootstrap/pull/10951. outline: 0;
+// When fading in the modal, animate it to slide down &.fade .modal-dialog {
+   .translate(0, -25%);
+   .transition-transform(~"0.3s ease-out");
+   }
+&.in .modal-dialog {
+ .translate(0, 0)
+ }
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+// Shell div to position the modal with bottom padding .modal-dialog {
+       position: relative;
+       width: auto;
+       margin: 0.625rem;
+   }
+// Actual modal .modal-content {
+       position: relative;
+       background-color: @modal-content-bg;
+       border: 1px solid @modal-content-fallback-border-color;
+   //old browsers fallback (ie8 etc) border: 1px solid @modal-content-border-color;
+       border-radius: @border-radius-large;
+   .box-shadow(0 0.1875rem 0.5625rem rgba(0,0,0,.5));
+       background-clip: padding-box;
+   // Remove focus outline from opened modal outline: 0;
+   }
+// Modal background .modal-backdrop {
+       position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       z-index: @zindex-modal-background;
+       background-color: @modal-backdrop-bg;
+// Fade for backdrop &.fade {
+   .opacity(0);
+   }
+&.in {
+ .opacity(@modal-backdrop-opacity);
+ }
+}
+// Modal header // Top section of the modal w/ title and dismiss .modal-header {
+                                                   padding: @modal-title-padding;
+                                                   border-bottom: 0.0625rem solid @modal-header-border-color;
+                                                   &:extend(.clearfix all);
+                                               }
+// Close icon .modal-header .close {
+       margin-top: -0.125rem;
+   }
+// Title text within header .modal-title {
+       margin: 0;
+       line-height: @modal-title-line-height;
+   }
+// Modal body // Where all modal content resides (sibling of .modal-header and .modal-footer) .modal-body {
+                                                                                                  position: relative;
+                                                                                                  padding: @modal-inner-padding;
+                                                                                              }
+// Footer (for actions) .modal-footer {
+                            padding: @modal-inner-padding;
+                            text-align: right;
+                        // right align buttons border-top: 0.0625rem solid @modal-footer-border-color;
+                            &:extend(.clearfix all);
+// clear it in case folks use .pull-* classes on buttons // Properly space out buttons .btn + .btn {
+                                                                margin-left: 0.3125rem;
+                                                                margin-bottom: 0;
+                                                            // account for input[type="submit"] which gets the bottom margin like all other inputs
+                                                            }
+// but override that for button groups .btn-group .btn + .btn {
+       margin-left: -0.0625rem;
+   }
+// and override it for block buttons as well .btn-block + .btn-block {
+       margin-left: 0;
+   }
+}
+// Measure scrollbar width for padding body during modal show/hide .modal-scrollbar-measure {
+                                                                  position: absolute;
+                                                                  top: -624.9375rem;
+                                                                  width: 3.125rem;
+                                                                  height: 3.125rem;
+                                                                  overflow: scroll;
+                                                              }
+// Scale up the modal @media (min-width: @screen-sm-min) {
+// Automatically set modal's width for larger viewports .modal-dialog {
+    width: @modal-md;
+    margin: 1.875rem auto;
+}
+.modal-content {
+.box-shadow(0 0.3125rem 0.9375rem rgba(0,0,0,.5));
+}
+// Modal sizes .modal-sm {
+       width: @modal-sm;
+   }
+}
+@media (min-width: @screen-md-min) {
+    .modal-lg {
+        width: @modal-lg;
+    }
+}
+ 

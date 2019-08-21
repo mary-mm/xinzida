@@ -1,0 +1,172 @@
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*background-color: #222d32;
+     */
+}
+.sidebar-menu > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu > li {
+    /*padding: 0.75rem 0.3125rem 0.75rem 0.9375rem;
+     */
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+    display: block;
+    line-height: 2.5rem;
+    /*border-left: 0.1875rem solid transparent;
+     */
+    color: #8F939E;
+    font-size: 0.8125rem;
+}
+.sidebar-menu >.current_page>a,.sidebar-menu >.current_page>a:hover,.sidebar-menu >.current_page>a:focus{
+    background: #1caf9a;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    border-radius: 0.25rem;
+}
+.sidebar-menu > li > a {
+    /*padding: 0.75rem 0.3125rem 0.75rem 0.9375rem;
+     */
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+    display: block;
+    line-height: 2.5rem;
+    border-radius: 0.25rem;
+    /*border-left: 0.1875rem solid transparent;
+     */
+    color: #8F939E;
+    font-size: 0.8125rem;
+}
+.sidebar-menu > li > a > .fa {
+    width: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: normal
+}
+.sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+    color: #8F939E;
+    background: #fff;
+    /*border-left-color: #3c8dbc;
+     */
+}
+.sidebar-menu > li > a>.icon-jia:before {
+    content: "\e608";
+}
+.sidebar-menu > li.active > a>.icon-jia:before {
+    content: "\e68e";
+}
+.sidebar-menu > li > .treeview-menu {
+    margin: 0 0.0625rem;
+    /*background: #2c3b41;
+     */
+}
+.sidebar-menu > li .label, .sidebar-menu > li .badge {
+    margin-top: 0.1875rem;
+    margin-right: 0.3125rem;
+}
+.sidebar-menu li.header {
+    padding: 0.625rem 1.5625rem 0.625rem 0.9375rem;
+    font-size: 0.75rem;
+    color: #4b646f;
+    background: #1a2226;
+}
+.sidebar-menu li > a > .fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 0.625rem;
+    margin-top: 0.1875rem;
+}
+.sidebar-menu li.active > a > .fa-angle-left {
+    content: '-';
+    display: inline-block;
+}
+.sidebar-menu li.active > .treeview-menu {
+    display: block;
+}
+.sidebar-menu a {
+    color: #b8c7ce;
+    text-decoration: none;
+}
+.sidebar-menu .treeview-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.3125rem;
+}
+.sidebar-menu .treeview-menu .treeview-menu {
+    padding-left: 1.25rem;
+}
+.sidebar-menu .treeview-menu > li {
+    margin: 0;
+}
+.sidebar-menu .treeview-menu > li > a {
+    padding: 0.3125rem 0.3125rem 0.3125rem 0.9375rem;
+    display: block;
+    font-size: 0.8125rem;
+    color: #8aa4af;
+}
+.sidebar-menu .treeview-menu > li > a > .fa {
+    width: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: normal
+}
+.sidebar-menu .treeview-menu > li > a > .fa-angle-left, .sidebar-menu .treeview-menu > li > a > .fa-angle-down {
+    width: auto;
+}
+.sidebar-menu .treeview-menu > li.active > a, .sidebar-menu .treeview-menu > li > a:hover {
+    color: #1caf9a;
+}
+.treeview>a{
+    overflow: hidden;
+}
+.treeview > a>i{
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-right: 0.625rem;
+}
+.select_c{
+    position: relative;
+    /*line-height: 1.875rem;
+     */
+    margin-bottom: 1rem;
+}
+.select_c> input[type="radio"], .select_c> input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+}
+.select_c> label {
+    position: absolute;
+    left: 0.4375rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.125rem;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+/*设置选中的input的样式*/
+/* + 是兄弟选择器,获取选中后的label元素*/
+.select_c>input:checked+label {
+    background-color: #1caf9a;
+    border: 1px solid #1caf9a;
+}
+/*添加的加号与label进行拼接(一个矩形边框去掉上和左的边框),再旋转45度*/
+.select_c>input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 0.3125rem;
+    height: 0.625rem;
+    top: 0;
+    left: 0.25rem;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}

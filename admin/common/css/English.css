@@ -1,0 +1,60 @@
+.nav-medium .container.body .col-md-3.left_color{
+    width: 15.625rem;
+    overflow: hidden;
+}
+.nav-medium .main_container .top_nav{
+    margin-left: 15.625rem;
+}
+.nav-medium .page_title {
+    width: calc(100% - 15.625rem);
+}
+.nav-medium .container.body .right_color{
+    margin-left: 15.625rem;
+}
+.sidebar-menu>li>a,.sidebar-menu>.notice{
+    overflow: hidden;
+    /*超出部分隐藏*/
+    white-space: nowrap;
+    /*不换行*/
+    text-overflow:ellipsis;
+    /*超出部分文字以...显示*/
+    width: 16.875rem;
+}
+.big_name{
+    font-size: 1.75rem;
+}
+.add_lamp_btn{
+    border-radius: 0.25rem!important;
+    background: #fff;
+    padding: 0.5rem 0.625rem;
+    box-sizing: border-box;
+}
+.treeview>a>.menu-text{
+    overflow: hidden;
+    /*超出部分隐藏*/
+    white-space: nowrap;
+    /*不换行*/
+    text-overflow:ellipsis;
+    /*超出部分文字以...显示*/
+    max-width: 8.125rem;
+}
+.bubble-slider-wrap{
+    left: 3.4375rem;
+}
+.bubble-slider-track {
+    position: absolute;
+    left: 1.625rem;
+    right: 1.375rem;
+    top: 0.625rem;
+    height: 0.125rem;
+    background: #1caf9a;
+}
+.pop_child ul>li>span{
+    width: 4rem;
+    display: inline-block;
+}
+.item_input > .label{
+    width: 9.375rem;
+    display: inline-block;
+    text-align: left;
+}

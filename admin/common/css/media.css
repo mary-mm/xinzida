@@ -1,0 +1,203 @@
+.nav_breadcrumb_c{
+    padding: 1.0625rem 1.5625rem;
+    box-sizing: border-box;
+}
+.nav_breadcrumb{
+    float: left;
+}
+.folder_cc{
+    padding: 1.0625rem 1.375rem;
+    box-sizing: border-box;
+}
+.folder_item{
+    float: left;
+    background: #F0F0F0;
+    padding: 0.375rem;
+    box-sizing: border-box;
+    margin-right: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    position: relative;
+    cursor: pointer;
+}
+.select_icon_btn{
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    top:0.375rem;
+    left: 0.375rem;
+    z-index: 120;
+}
+.focus:before{
+    content: '✓';
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #1CAF9A;
+    font-style: normal;
+    /*font-weight: bold;*/
+    line-height: 1.6rem;
+    text-align: center;
+    z-index: 130;
+    font-family: san-serif;
+    font-size: 1.2rem;
+}
+.folder_icon{
+    background:#1CAF9A;
+    color: #fff;
+    width: 9.875rem;
+    height: 9.875rem;
+    overflow: hidden;
+    text-align: center;
+    /*padding:0 0.625rem;
+     */
+    box-sizing: border-box;
+}
+.folder_icon>i{
+    font-size: 6.8rem;
+    line-height: 9.875rem;
+    color: #fff;
+    text-align: center;
+}
+.folder_name{
+    font-size: 0.625rem;
+    color: #1D2939;
+    text-align: left;
+}
+.folder_desc{
+    font-size: 0.5rem;
+    color: #9F9CA9;
+}
+.folder_desc>.left>span{
+    margin-right: 0.625rem;
+}
+.folders{
+    background: #fff;
+    width: 100%;
+}
+#pages{
+    overflow: hidden;
+    margin: 1.25rem auto;
+    text-align: center;
+    display: inline-block;
+}
+.lf{
+    float: left;
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+.rt{
+    float: right;
+}
+#mid{
+    margin: 0 0.3125rem;
+    overflow: hidden;
+}
+#mid>span{
+    float: left;
+    width: 1.75rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0.3125rem;
+}
+.btn{
+    margin: 0 0.625rem;
+    color: #fff;
+    background-color: #1CAF9A;
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    /*margin-bottom: 0;
+     */
+    font-size: 0.8125rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.btn:hover,.btn:focus{
+    color: #fff;
+}
+span:hover{
+    cursor: pointer;
+}
+.hover{
+    background-color: #1CAF9A;
+    color: #fff;
+}
+.demoContent{
+    padding: 1.0625rem 1.5625rem;
+    box-sizing: border-box;
+}
+.folder_icon>span{
+    font-size: 1.2rem;
+    position: absolute;
+    top:0.625rem;
+    left: 0rem;
+    z-index: 100;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 9.875rem;
+    line-height: 9.875rem;
+}
+.folders{
+    display: none;
+}
+.folder_l>.folder_c>.folder_icon>i{
+    color: rgb(255,224,10);
+}
+.folder_c{
+    width: 9.875rem;
+}
+.folder_icon>.folder_img{
+    width: 100%;
+    display: inline-block;
+}
+.folder_btn{
+    position: absolute;
+    bottom: 0;
+    left: -0.625rem;
+    z-index: 150;
+    background:rgba(255,255,255,1);
+    box-shadow:0rem 0.1875rem 0.375rem rgba(0,0,0,0.16);
+    opacity:1;
+    display: none;
+}
+.folder_btn>button{
+    border: 0;
+    background: transparent;
+    color: #313131;
+    padding:0.2rem 0.7rem;
+    box-sizing: border-box;
+    text-align: left;
+    display: block;
+    margin-top: 0.1875rem;
+    font-size: 0.75rem;
+}
+.remove_folder_btn{
+}
+.rename_btn{
+}
+.trash_list{
+    display: none;
+
+}
+
+

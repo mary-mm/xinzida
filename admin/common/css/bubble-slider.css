@@ -1,0 +1,206 @@
+.bubble-slider {
+    display: block;
+    width: 100%;
+    font-size: 1rem
+}
+.bubble-slider-wrap {
+    position: relative;
+    top:-1.25rem;
+    right:0.625rem;
+    left: 2.5rem;
+    display: block;
+    width: 80%;
+    height: 1.25rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.bubble-slider-wrap:after, .bubble-slider-wrap:before {
+    content: '';
+    display: table
+}
+.bubble-slider-wrap:after {
+    clear: both
+}
+.bubble-slider-track {
+    position: absolute;
+    left: 2.25rem;
+    right: 1.875rem;
+    top: 0.625rem;
+    height: 0.125rem;
+    background: #1caf9a;
+}
+.bubble-slider-thumb {
+    position: absolute;
+    top: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    cursor: ew-resize
+}
+.bubble-slider-bubble {
+    position: absolute;
+    top: -1.875rem;
+    left: 1.5625rem;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*display: none;
+     */
+}
+.bubble-slider-bubble span {
+    padding: 0.3125rem 0.9375rem;
+    display: inline-block;
+    font-size: 1.5625rem;
+    color: #bdc3c3;
+    background: #343a3a;
+    border-radius: 0.3125rem
+}
+.bubble-slider-bubble-arrow {
+    background: #343a3a;
+    position: absolute;
+    left: 50%;
+    bottom: -0.1875rem;
+    margin-left: -0.3125rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.bubble-slider-minus {
+    position: relative;
+    float: left
+}
+.bubble-slider-plus {
+    position: relative;
+    float: right
+}
+.bubble-slider-minus{
+    left: 0.625rem;
+}
+.bubble-slider-plus{
+    right: 0.625rem;
+}
+.bubble-slider-minus, .bubble-slider-plus {
+    top: 0.625rem;
+    color: #666;
+    font-size: 1.875rem;
+    /*border: 2px solid #e5e5e5;
+     */
+    /*border-radius: 50%;
+     */
+    cursor: pointer;
+}
+.bubble-slider-minus i {
+    top: 45%;
+    color: #666;
+}
+.bubble-slider-minus i, .bubble-slider-plus i{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+.bubble-slider-plus span {
+    top: 50%
+}
+/*# sourceMappingURL=bubble-slider.css.map */
+.range-slider{
+}
+.range-slider input[type="range"]{
+    width: calc(100% - (4.25rem));
+    height: 1.25rem;
+    border-radius:0.625rem;
+    background: #E0E0E0;
+    outline: none;
+    float: left;
+    -webkit-appearance: none;
+    position: relative
+}
+.range-slider input[type="range"]::-webkit-slider-thumb{
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.range-slider input[type="range"]::-moz-range-thumb{
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #1caf9a;
+    border: none;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+.range-slider .range-value{
+    display: inline-block;
+    width: 3.75rem;
+    padding: 0.4375rem 0.625rem;
+    margin-left: 0.5rem;
+    /*background: #323b4b;
+     */
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #3D3D3D;
+    line-height: 1.25rem;
+    text-align: center;
+    position: relative;
+    top: -0.9375rem;
+}
+::-moz-range-track{
+    background: #fff;
+    border: 0;
+}
+.light_progress{
+    /*box-shadow: 0 0.0625rem 0.125rem #ccc;
+     */
+}
+.light_progress {
+    width: 12.5rem;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    margin-right: 2.5rem;
+    margin-top: 0.3125rem;
+    margin-left: 0.3125rem;
+}
+.progress_bg {
+    height: 0.625rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+.progress_bar {
+    background: #1caf9a;
+    width: 0;
+    height: 0.625rem;
+    border-radius: 0.3125rem;
+}
+.progress_btn {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    left: 0rem;
+    margin-left: -0.625rem;
+    top: -0.3125rem;
+    cursor: pointer;
+    border: 1px #ddd solid;
+    box-sizing: border-box;
+}
+.progress_btn:hover {
+    border-color: #F7B824;
+}
+.text{
+    /*position: absolute;*/
+    /*right: -2.5rem;*/
+    /*top: -0.1875rem;*/
+    /*z-index: 999;*/
+}

@@ -1,0 +1,38 @@
+.batch_pass_btn{
+    background: #1caf9a;
+    font-size: 0.75rem;
+    color: #fff;
+    height: 1.875rem;
+    /* line-height: 1.875rem;
+     */
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 0.75rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    margin-top: 0.8125rem;
+    margin-right: 0.75rem;
+}
+.detail_btn,.refuse_btn,.adopt_btn{
+    border-radius: 0.625rem;
+    padding: 0.125rem 0.625rem;
+}
+.detail_btn,.detail_btn:hover{
+    color: #1D2939;
+    border: 1px solid #1D2939;
+}
+.adopt_btn,.adopt_btn:hover{
+    color: #2273F9;
+    border: 1px solid #2273F9;
+}
+.refuse_btn,.refuse_btn:hover{
+    color: #D9534F;
+    border: 1px solid #D9534F;
+}
+#refuseReasons{
+    font-size: 0.75rem;
+    color: #9B9B9B;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+}
