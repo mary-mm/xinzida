@@ -1,0 +1,683 @@
+
+
+
+<script language="JavaScript"> var gSessionId="79C0101A85ECB16339E85AD0687C9573";</script>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <base href="https://cloud.jettwork.com:443/jwcloud/">
+
+    <script type="text/javascript">
+        var basePath="";
+        var sessionId="";
+    </script>
+
+    <title>智慧云平台</title>
+
+    <meta http-equiv="pragma" content="public">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="简为科技">
+    <meta http-equiv="description" content="简为科技">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="thirdparty/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="thirdparty/bootstrap/css/bootstrap-switch.min.css" type="text/css" rel="stylesheet" />
+    <link href="thirdparty/bootstrap/css/bootstrap-slider.min.css" type="text/css" rel="stylesheet" />
+    <link href="thirdparty/jquery-easyui/themes/default/easyui.css" type="text/css" rel="stylesheet" />
+    <link href="thirdparty/jquery-easyui/themes/icon.css" type="text/css" rel="stylesheet" />
+    <link href="thirdparty/ztree/css/zTreeStyle/zTreeStyle.css" type="text/css" rel="stylesheet" />
+
+    <link href="web/css/jw.css?t=1560999418702" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="thirdparty/jquery.min.js"></script>
+    <script type="text/javascript" src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="thirdparty/bootstrap/js/bootstrap-switch.min.js"></script>
+    <script type="text/javascript" src="thirdparty/bootstrap/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="thirdparty/jquery-easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="thirdparty/jquery-easyui/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="thirdparty/ztree/js/jquery.ztree.all-3.5.min.js"></script>
+    <script type="text/javascript" src="thirdparty/ztree/js/jquery.ztree.exhide-3.5.min.js"></script>
+    <script type="text/javascript" src="thirdparty/encrypt.js"></script>
+    <script type="text/javascript" src="web/js/const.js?t=1560999418702"></script>
+    <script type="text/javascript" src="web/js/jw.js?t=1560999418702"></script>
+
+    <script>
+        function closes(){
+            $("#Loading").fadeOut("normal",function(){
+                $(this).remove();
+            });
+        }
+        var pc;
+        $.parser.onComplete = function(){
+            if(pc) clearTimeout(pc);
+            pc = setTimeout(closes, 1);
+        }
+    </script>
+
+    <script>var gProgramId = 2560;</script>
+    <script>var gDisplayWidth = 128;</script>
+    <script>var gDisplayHeight = 224;</script>
+
+
+    <link href="thirdparty/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="thirdparty/umeditor/third-party/template.min.js?t=1560999418702"></script>
+    <script type="text/javascript" charset="utf-8" src="thirdparty/umeditor/umeditor.config.js?t=1560999418702"></script>
+    <script type="text/javascript" charset="utf-8" src="thirdparty/umeditor/umeditor.min.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/umeditor/lang/zh-cn/zh-cn.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/html2canvas.min.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/canvas2image.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/jquery.colorpicker.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/jqueryFileUpload/js/vendor/jquery.ui.widget.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/jqueryFileUpload/js/jquery.iframe-transport.js?t=1560999418702"></script>
+    <script type="text/javascript" src="thirdparty/jqueryFileUpload/js/jquery.fileupload.js?t=1560999418702"></script>
+
+    <script language="JavaScript" src="web/js/lamppost/programview.js?t=1560999418702"></script>
+    <style>
+
+        p{
+            margin:5px 0;
+        }
+
+        .colorPanel {
+            display: inline-block;
+            vertical-align:top;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #b7d2ff;
+            background: #ff0000;
+            cursor: pointer;
+        }
+
+        #imageViewer{
+            background: #f5f5f5;
+        }
+
+        #videoViewer{
+            background: #f5f5f5;
+        }
+
+        #audioViewer{
+            background: #f5f5f5;
+        }
+
+        .imgSelected {
+            border: 2px solid #FF0000;
+        }
+
+        .videoSelected {
+            border: 2px solid #FF0000;
+        }
+
+        .audioSelected {
+            border: 2px solid #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id='Loading' style="position:absolute;z-index:99999;top:50px;left:0px;width:100%;height:100%;background:#FFFFFF;text-align:center;padding-top:10%;">
+    <image src='web/images/loading.gif'/>
+</div>
+
+
+
+
+
+<script language="JavaScript"> var gUserName="xzd", gUserID=15, gUserType=2, gUserCity="广州", gUserCompnayID=10;</script>
+
+
+
+<div class="header">
+    <div class="topleft" style="display:none;">
+        <a class="SL_harder" href="web/system/center.html" target="_self"><img
+                src="web/images/logo.png" title="系统首页" /></a>
+    </div>
+    <div class="SL_topleft" style="display:none;">
+        <a href="web/system/en_US/center.html" target="_self"><img
+                src="web/images/DM_logo_regular.svg" title="System Home Pg" style="margin-top: 7px; margin-left: 17px ;height:38" /></a>
+    </div>
+
+    <div class="topad">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides" id="banner-ui">
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="topmiddle">
+        <ul class="nav">
+            <li><a href="web/lamppost/main.html?t=1560999418709" id="lamppost" target="_self">
+                智慧灯杆</a></li>
+            <li><a href="web/system/index.html?t=1560999418709" id="system" target="_self">
+                系统管理</a></li>
+
+        </ul>
+    </div>
+
+    <div class="topright">
+        <!--  <ul>
+            <li><a class="SL_modifyPw" id="changePassword" href="#"></a></li>
+            <li><a class="SL_exit" id="logout" href="#" target=_self></a></li>
+        </ul>
+
+        <div class="user">
+
+
+
+        </div> -->
+        <a href="javascript:void(0)" id="mb" class="easyui-menubutton"
+           data-options="menu:'#mm_tool',iconCls:'icon-person'">
+            <span>xzd</span>
+
+        </a>
+        <div id="mm_tool" style="width:160px;">
+            <div data-options="iconCls:'icon-edit'"><a class="SL_modifyPw" id="changePassword" href="#"></a></div>
+            <div data-options="iconCls:'icon-exit'"><a class="SL_exit" id="logout" href="#" target=_self></a></div>
+        </div>
+    </div>
+
+    <div id="changePasswordWindow" class="easyui-window SL_modifyPw2" title=""
+         style="width:380px;height:200px"
+         data-options="collapsible:false,minimizable:false,maximizable:false,modal:true,resizable:false,draggable:true">
+        <div class="padding5">
+            <a class="SL_originalPw"></a><input type="password" id="edtOldPassword" class="easyui-textbox"
+                                                style="width:300px;height:30px;">
+
+        </div>
+        <div class="padding5">
+            <a class="SL_newPw"></a><input type="password" id="edtNewPassword" class="easyui-textbox"
+                                           style="width:300px;height:30px;">
+
+        </div>
+
+        <div style="padding-right: 12px;" class="pull-right">
+            <a id="btnChangePassword" href="#" class="easyui-linkbutton jwbtn SL_sure"></a>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .div1{
+
+        width:100%;
+        height:70px;
+    }
+    .div2{
+
+        height:40px;
+        font-size:18px;
+        color:red;
+    }
+    .urgency_hander_div{
+        text-align: center;
+    }
+    .SL_topleft{
+        display:none;
+    }
+</style>
+
+<script type="text/javascript">
+
+    if("null"=="en_US"){
+        //$(".SL_harder").cn();
+        $(".SL_topleft").css("display","inline-block");
+        $(".topleft").css("display","none");
+        $(".SL_modifyPw").html("Change Password");
+        $(".SL_originalPw").html("Original cipher");
+        $(".SL_newPw").html("New password");
+        $(".SL_sure").html("sure");
+        $(".SL_exit").html("logout");
+        $(".SL_modifyPw2").attr("title","Change Password");
+
+    }else if("null"=="ru_RU"){
+        //$(".SL_harder").cn();
+        $(".SL_topleft").css("display","inline-block");
+        $(".topleft").css("display","none");
+        $(".SL_modifyPw").html("ИИзменить пароль");
+        $(".SL_originalPw").html("первоначально шифр");
+        $(".SL_newPw").html("новый пароль");
+        $(".SL_sure").html("определить");
+        $(".SL_exit").html("Выйти из аккаунта");
+        $(".SL_modifyPw2").attr("title","Изменение пароля");
+    }else{
+        //$(".SL_harder").cn();
+        $(".SL_topleft").css("display","none");
+        $(".topleft").css("display","inline-block");
+        $(".SL_modifyPw").html("修改密码");
+        $(".SL_originalPw").html("原密码:");
+        $(".SL_newPw").html("新密码:");
+        $(".SL_sure").html("确定");
+        $(".SL_exit").html("退出");
+        $(".SL_modifyPw2").attr("title","修改密码");
+    }
+
+    function menuClick(){
+        if("null"=="en_US"){
+            $(".SL_modifyPw").html("Change Password");
+            $(".SL_exit").html("logout");
+
+        }else if("null"=="ru_RU"){
+            $(".SL_modifyPw").html("ИИзменить пароль");
+            $(".SL_exit").html("Выйти из аккаунта");
+        }else{
+            $(".SL_modifyPw").html("修改密码");
+            $(".SL_exit").html("退出");
+        }
+    }
+
+
+    //判断用户是否拥有紧急呼叫界面的权限，拥有权限就允许连接后台的websocket
+    isEmergencyCall();
+    function isEmergencyCall(){
+        var request = {};
+        var reqData = {};
+
+        reqData.userid=gUserID;
+        request.data=reqData;
+
+        request.action = "isEmergencyCall";
+        $.ajax({
+            type : "POST",
+            url : "web/user.do",
+            dataType : "json",
+            async: true,
+            contentType : "application/json",
+            data : JSON.stringify(request),
+            success : function(res) {
+                if (res.success) {
+                    websocketLine();
+                } else {
+                    //$.messager.alert('提示',res.message);
+                    console.log(res.message);
+                }
+            }
+        });
+    }
+    //将websocket连接路径转变成项目路径
+    var basePath="https://cloud.jettwork.com:443/jwcloud/";
+    var team=basePath.split(":")[0];
+    var websocket_url=null;
+    var refresh_flag=0;
+    var jw_list_scrollTop=0;
+    var websocket = null;
+
+    if(team=="http"){
+        websocket_url=basePath.replace(team,"ws");
+    }else if(team=="https"){
+        websocket_url=basePath.replace(team,"wss");
+    }
+
+    function websocketLine(){
+
+        //判断当前浏览器是否支持WebSocket
+        if ('WebSocket' in window) {
+            websocket = new WebSocket(websocket_url+"websocket");
+        }
+        else {
+            alert('当前浏览器 Not support websocket');
+        }
+
+        //连接发生错误的回调方法
+        websocket.onerror = function () {
+            //setMessageInnerHTML("WebSocket连接发生错误");
+            console.log("WebSocket连接发生错误");
+        };
+
+        //连接成功建立的回调方法
+        websocket.onopen = function () {
+            //console.log("WebSocket连接成功");
+        };
+
+        //接收到消息的回调方法
+        websocket.onmessage = function (event) {
+            //console.log(event);
+            setMessageInnerHTML(event.data);
+        };
+
+        //连接关闭的回调方法
+        websocket.onclose = function () {
+            //console.log("WebSocket连接关闭");
+        };
+
+        //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+        window.onbeforeunload = function () {
+            //closeWebSocket();
+            var list = window.location.href;
+            //判断打开的是否是紧急呼叫界面，判断依据是匹配url是否有/emergencyCall/emergencyCall字样
+            if(list.indexOf("/emergencyCall/emergencyCall") != -1){
+            }else{
+                websocket.close();
+                //websocket.close();
+            }
+
+        };
+    }
+
+    var emeinfoDisplay="<div class='div1'><div class='div2'>您有紧急信息需要处理！</div><div class='urgency_hander_div'><button id='urgency_hander' class='btn btn-primary'>立即处理<button><div></div>";
+    var emeinfoDisplay_en_US="<div class='div1'><div class='div2'>emergency call coming !</div><div class='urgency_hander_div'><button id='urgency_hander' class='btn btn-primary'>processing<button><div></div>";
+    var emeinfoDisplay_ru_RU="<div class='div1'><div class='div2'>чрезвычайная звонит !</div><div class='urgency_hander_div'><button id='urgency_hander' class='btn btn-primary'>обработка<button><div></div>";
+    //将消息显示在网页上
+    function setMessageInnerHTML(innerHTML) {
+        //区别用户是按了报警器就执行以下代码，如果是调用websocket.send(id);函数，回调就只执行下面的Allrefresh()刷新
+        var str=innerHTML.split("_")[0];
+        var strId=innerHTML.split("_")[1];
+        var strDeviceNo=innerHTML.split("_")[2];
+        if(str=="a"){
+
+            var url = window.location.href;
+            if(url.indexOf("en_US") != -1){
+                //后台有报警信息就立马出现在页面上
+                $.messager.show({
+                    title:'Urgent information',
+                    msg:emeinfoDisplay_en_US,
+                    timeout:0,
+                    showType:'slide',
+                    width:260,
+                    height:150,
+
+                });
+            }else if(url.indexOf("ru_RU") != -1){
+                //后台有报警信息就立马出现在页面上
+                $.messager.show({
+                    title:'срочная информация',
+                    msg:emeinfoDisplay_ru_RU,
+                    timeout:0,
+                    showType:'slide',
+                    width:260,
+                    height:150,
+
+                });
+            }else{
+                //后台有报警信息就立马出现在页面上
+                $.messager.show({
+                    title:'紧急信息',
+                    msg:emeinfoDisplay,
+                    timeout:0,
+                    showType:'slide',
+                    width:260,
+                    height:150,
+
+                });
+            }
+
+
+        }
+
+        //当点击页面上的立即处理报警信息时的跳转操作
+        $(document).ready(function(){
+            $("#urgency_hander").on("click",function(){
+
+                var url = window.location.href;
+                if(url.indexOf("en_US") != -1){
+                    window.location = '/jwcloud/web/emergencyCall/en_US/emergencyCall.html?id='+strId+'&&companyId='+gUserCompnayID+'&&deviceNo='+strDeviceNo;
+                }else if(url.indexOf("ru_RU") != -1){
+                    window.location = '/jwcloud/web/emergencyCall/ru_RU/emergencyCall.html?id='+strId+'&&companyId='+gUserCompnayID+'&&deviceNo='+strDeviceNo;
+                }else{
+                    window.location = '/jwcloud/web/emergencyCall/emergencyCall.html?id='+strId+'&&companyId='+gUserCompnayID+'&&deviceNo='+strDeviceNo;
+                }
+
+
+            });
+        });
+
+        //当有报警信息就刷新全部人的ul列表,和info界面的数据表格
+        Allrefresh();
+    }
+
+    //关闭WebSocket连接
+    function closeWebSocket() {
+        websocket.close();
+    }
+    function Allrefresh(){
+        if(typeof tableRefresh != 'undefined' && tableRefresh instanceof Function){
+            tableRefresh();
+        };
+        var isFunction =false;
+        try{
+            //这里的代码需要用try一下,因为当showFace为定义时会抛出异常
+            isFunction = typeof(eval('bindList'))=="function";
+        }catch(e){}
+        if(isFunction) {
+            jw_list_scrollTop=$("#jw-list").scrollTop();
+            refresh_flag=1;
+            bindList();
+        };
+
+    }
+    //将消息发送给后台，发送消息
+    function send(id) {
+        websocket.send(id);
+    }
+
+</script>
+
+
+
+
+
+<div class="main_panel">
+    <div class="easyui-layout" data-options="fit:true,border:false">
+        <div data-options="region:'west', split:false,border:false" style="width:150px;background:#eee;">
+            <div class="sub_nav_div"><label>地图</label><div><ul class="sub_nav"><li><a href="web/lamppost/map.html?t=1560999418709" id="lamppostmap" target="_self">灯杆地图</a></li></ul></div></div><div class="sub_nav_div"><label>管理</label><div><ul class="sub_nav"><li><a href="web/lamppost/monitor.html?t=1560999418709" id="lamppostmonitor" target="_self">视频监控</a></li><li><a href="web/lamppost/environment.html?t=1560999418709" id="environment" target="_self">环境监测</a></li><li><a href="web/lamppost/light.html?t=1560999418709" id="lamppostlight" target="_self">路灯控制</a></li><li><a href="web/lamppost/leddisplay.html?t=1560999418709" id="lamppostleddisplay" target="_self">信息发布</a></li><li><a href="web/lamppost/lamppostprogrammonitor.html?t=1560999418709" id="lamppostprogrammonitor" target="_self">播放节目</a></li></ul></div></div><div class="sub_nav_div"><label>其他</label><div><ul class="sub_nav"><li><a href="web/lamppost/group.html?t=1560999418709" id="lamppostgroup" target="_self">设备分组</a></li><li><a href="web/lamppost/mediamanage.html?t=1560999418709" id="lamppostmediamanage" target="_self">媒体管理</a></li><li><a href="web/lamppost/lamppostSeniormanagement.html?t=1560999418709" id="lamppostSeniormanagement" target="_self">高级管理</a></li></ul></div></div>
+        </div>
+
+
+
+
+        <div class="padding5" data-options="region:'center',border:false">
+            <!-- 所有模块开发在这里添加，其他地方不要动 -->
+            <div class="easyui-layout" data-options="fit:true,border:true">
+                <div class="jwpanel padding5" data-options="region:'north'" style="height:40px;">
+                    <a style="color:#FF0000; font-size:18px;" id="programFlag"></a>
+                    <a id="btnBack2Table" class="easyui-linkbutton pull-right" data-options="iconCls:'icon-task'" >返回列表</a>
+                    <a id="btnRemoveItem" class="easyui-linkbutton pull-right" data-options="iconCls:'icon-cancel'" style="margin-right:10px;">删除节目</a>
+                    <a id="btnPreviewProgram" class="easyui-linkbutton pull-right" data-options="iconCls:'icon-search'" style="margin-right:10px;">节目预览</a>
+                    <a id="btnSaveProgram" class="easyui-linkbutton pull-right" data-options="iconCls:'icon-save'" style="margin-right:10px;">节目保存</a>
+                </div>
+
+                <div data-options="region:'center',border:false">
+                    <div class="easyui-layout" data-options="fit:true,border:true">
+                        <div data-options="region:'west'" style="width:260px;">
+                            <div class="padding5">
+                                <a class="acr">名称：</a>
+                                <input id="edtProgramName" type="text" class="easyui-textbox" style="width:200px;">
+                            </div>
+                            <div class="padding5">
+                                <a>屏宽：</a>
+                                <input id="edtDisplayWidth" type="text" class="easyui-numberbox" data-options="disabled: true" style="width:76px;">
+                                <a>屏高：</a>
+                                <input id="edtDisplayHeight" type="text" class="easyui-numberbox" data-options="disabled: true" style="width:76px;">
+
+                                <div class="padding5">
+                                    <a id="btnAddText" class="easyui-linkbutton" data-options="iconCls:'icon-text'" style="width:240px;height:40px;">增加文本节目</a>
+                                </div>
+                                <div class="padding5">
+                                    <a id="btnAddPicture" class="easyui-linkbutton" data-options="iconCls:'icon-picture'" style="width:240px;height:40px;">增加图片节目</a>
+                                </div>
+                                <div class="padding5">
+                                    <a id="btnAddGrid" class="easyui-linkbutton" data-options="iconCls:'icon-grid'" style="width:240px;height:40px;">增加表格节目</a>
+                                </div>
+                                <div class="padding5">
+                                    <a id="btnAddVideo" class="easyui-linkbutton" data-options="iconCls:'icon-video'" style="width:240px;height:40px;">增加视频节目</a>
+                                </div>
+                                <div class="padding5">
+                                    <a id="btnAddAudio" class="easyui-linkbutton" data-options="iconCls:'icon-audio'" style="width:240px;height:40px;">增加背景音频</a>
+                                </div>
+
+                            </div>
+                            <div class="padding5">
+
+                            </div>
+                        </div>
+                        <div data-options="region:'east'" style="width:200px;">
+                            <div class="easyui-panel"
+                                 style="width:100%;height:260px;"
+                                 data-options="closable:false,
+									                collapsible:false,minimizable:false,maximizable:false,closable:false,border:false">
+                                <ul id="programTree" class="ztree" style="height:260px"></ul>
+                            </div>
+                            <div class="easyui-panel" title="属性"
+                                 style="width:100%;height:auto; padding:10px"
+                                 data-options="closable:false,
+									                collapsible:false,minimizable:false,maximizable:false,closable:false,border:false">
+                                <a>停留时间（秒）：</a>
+                                <input id="edtStayTime" type="text" class="easyui-numberbox" value="10" data-options="min:1,precision:0" style="width:180px">
+                            </div>
+                        </div>
+                        <div class="padding5" data-options="region:'center'">
+                            <div id="displayPanel" style="background:#000000;">
+                                <video id="videoPanel" src=""  autoplay="autoplay"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="editTextWindow" class="easyui-window" title="编辑文本节目" style="width:600px;height:400px;padding:5px;"
+     data-options="resizable:true,collapsible:false,minimizable:false,maximizable:true,modal:true">
+    <script type="text/plain" id="textEditor" style="width:1000px;height:240px;"></script>
+    <div style="margin:10px 0 0 200px;position:absolute;bottom:15px;">
+        <a id="btnSaveEditText" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="width: 150px;">确定</a>
+        </div>
+        </div>
+
+
+
+    <div id="excelImages" class="padding5" style="overflow-x:auto;overflow-y:none;height:200px;width:760px;display:inline-block">
+        </div>
+
+        <div style="margin:10px 0 0 300px;position:absolute;bottom:15px;">
+        <a id="btnSaveGrid" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="width: 150px;">确定</a>
+        </div>
+
+        <input type="file" style="display:none" id="uploadExcel" name="excel" accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+        </div>
+
+        <div id="selectImageWindow" class="easyui-dialog" title="选择图片" style="width:800px;height:440px;padding:5px;"
+    data-options="resizable:true,collapsible:false,minimizable:false,maximizable:true,buttons:'#imgbb',modal:true">
+        <div class="padding5">
+        <a>名称：</a>
+    <input id="edtImageName" class="easyui-textbox" style="width:100px">
+        <a>标签：</a>
+    <input id="cbxMediaLabel" class="easyui-combobox" data-options="editable:false, valueField:'id',textField:'text'">
+        <a>时间：</a>
+    <input id="ddStartDate" type="text" class="easyui-datebox" data-options="editable:false" style="width:110px;">-
+        <input id="ddEndDate" type="text" class="easyui-datebox"  data-options="editable:false" style="width:110px;">
+        <a id="btnQueryImage" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:false">查询</a>
+        <a id="btnSaveImage" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:false">确定</a>
+        </div>
+        <div id="imageViewer"></div>
+        </div>
+        <div id="imgbb">
+        <center>
+        <a id="btnPrePageImg" style="width:80px;cursor:pointer">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    第<span id="imgCurPage">0</span>页/共<span id="imgTotolPage">0</span>页&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="btnNextPageImg" style="width:80px;cursor:pointer">下一页</a>
+        </center>
+        </div>
+
+        <div id="selectVideoWindow" class="easyui-dialog" title="选择视频" style="width:800px;height:440px;padding:5px;"
+    data-options="resizable:true,collapsible:false,minimizable:false,maximizable:true,buttons:'#videobb',modal:true">
+        <div class="padding5">
+        <a>名称：</a>
+    <input id="edtVideoName1" class="easyui-textbox" style="width:100px">
+        <a>标签：</a>
+    <input id="cbxMediaLabel1" class="easyui-combobox" data-options="editable:false, valueField:'id',textField:'text'">
+        <a>时间：</a>
+    <input id="ddStartDate1" type="text" class="easyui-datebox" data-options="editable:false" style="width:110px;">-
+        <input id="ddEndDate1" type="text" class="easyui-datebox"  data-options="editable:false" style="width:110px;">
+        <a id="btnQueryVideo" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:false">查询</a>
+        <a id="btnSaveVideo" class="easyui-linkbutton" data-options="iconCls:'icon-ok',plain:false">确定</a>
+        </div>
+        <div id="videoViewer"></div>
+        </div>
+        <div id="videobb">
+        <center>
+        <a id="btnPrePageVideo" style="width:80px;cursor:pointer">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    第<span id="videoCurPage">0</span>页/共<span id="videoTotolPage">0</span>页&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="btnNextPageVideo" style="width:80px;cursor:pointer">下一页</a>
+        </center>
+        </div>
+
+        <div id="selectAudioWindow" class="easyui-dialog" title="选择音频" style="width:820px;height:400px;padding:5px;"
+    data-options="resizable:true,collapsible:false,minimizable:false,maximizable:true,buttons:'#audiobb',modal:true">
+        <div class="padding5">
+
+        <div id="audioViewer"></div>
+        </div>
+        <div id="audiobb">
+        <center>
+        <a id="btnPrePageAudio" style="width:80px;cursor:pointer">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    第<span id="audioCurPage">0</span>页/共<span id="audioTotolPage">0</span>页&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="btnNextPageAudio" style="width:80px;cursor:pointer">下一页</a>
+        </center>
+        </div>
+
+        <div id="previewWindow" class="easyui-dialog" style="width:300px;height:200px"
+    data-options="title:'节目预览',modal:true">
+        <div id="previewImg" style="background:#000000">
+        <img style="width:100%;height:100%" src=""></img>
+        </div>
+
+        <div id="previewVideo" style="background:#000000; display:none">
+        <video style="width:100%;height:100%" src=""></video>
+        </div>
+        </div>
+
+        <div id="realInfoCfgWindow" class="easyui-dialog" style="width:500px;height:300px"
+    data-options="title:'实时信息设置',buttons:'#bb2',modal:true">
+        <div class="easyui-layout" data-options="fit:true,border:false">
+        <div data-options="region:'west'" style="width:382px;">
+        <table id="real_info_table" style="width:100%;height:100%"></table>
+        </div>
+        <div data-options="region:'east'" style="width:128px;">
+        <div id="preRealInfoImg" style="background:#000000">
+        <img style="width:100%;height:100%" src=""></img>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="bb2">
+        <a id="btnStopRealInfo" class="easyui-linkbutton pull-left" data-options="iconCls:'icon-cancel'">禁用</a>
+        <a id="btnSendRealInfo" class="easyui-linkbutton" data-options="iconCls:'icon-redo'">启用</a>
+        <a id="btnCloseCfg" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'">关闭</a>
+        </div>
+
+
+        <div id="sendInfoWindow" class="easyui-dialog" style="width:700px;height:500px"
+    data-options="title:'选择显示屏',buttons:'#bb',modal:true">
+        <div class="easyui-layout" data-options="fit:true,border:false">
+        <div data-options="region:'center',border:false">
+        <table id="availableDisplayTable" data-options="fit:true" ></table>
+        </div>
+        <div id="sendLog" class="padding5" data-options="region:'south',border:false" style="height:100px;">
+        </div>
+        </div>
+        </div>
+        <div id="bb">
+        <a id="btnSend" style="width:80px;" class="easyui-linkbutton">确定</a>
+        <a id="btnClose" style="width:80px;" class="easyui-linkbutton">关闭</a>
+        </div>
+
+
+
+        <div class="footer">
+        <a></a> <i>DESIGNMAN 版权所有© 2017 (V1.0)</i>
+        <a href="http://www.miitbeian.gov.cn/" style="float: right;">粤ICP备15019923号-2&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+
+
+    </body>
+    </html>

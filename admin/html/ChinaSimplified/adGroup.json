@@ -1,0 +1,33 @@
+[
+  {
+    "id":"3802652255225522",
+    "advertisingGroup": "广告1",
+    "advertisingType": "普通广告",
+    "screen_height": 224,
+    "screen_width": 224,
+    "label": "aa",
+    "update_time": "2019-01-23 10:13:35",
+    "creator": "xzd"
+  },
+  {
+    "id":"3802652255225522",
+    "advertisingGroup": "广告2",
+    "advertisingType": "插播广告",
+    "screen_height": 224,
+    "screen_width": 224,
+    "label": "aa",
+    "update_time": "2019-01-23 10:13:35",
+    "creator": "xzd"
+  },
+  {
+    "id":"3802652255225522",
+    "advertisingGroup": "广告3",
+    "advertisingType": "普通广告",
+    "screen_height": 224,
+    "screen_width": 224,
+    "label": "aa",
+    "update_time": "2019-01-23 10:13:35",
+    "creator": "xzd"
+  }
+
+]

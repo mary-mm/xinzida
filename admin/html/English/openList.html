@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)http://www.17sucai.com/preview/1528155/2019-02-27/kj/admin-default/admin_left_menu/index.html -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="description" content="bootstrap default admin template">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>设备管理</title>
+
+
+    <!-- Start global css -->
+    <link rel="stylesheet" href="common/css/waves.min.css">
+    <link rel="stylesheet" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="common/css/iconfont.css">
+    <!-- End global css -->
+
+    <!-- Start page plugin css -->
+    <link rel="stylesheet" href="common/css/jqvmap.css">
+    <!-- End page plugin css -->
+
+    <!-- Start template global css -->
+    <link href="common/css/components.min.css" type="text/css" rel="stylesheet">
+    <!-- End template global css -->
+
+    <!-- Start layout css -->
+    <link rel="stylesheet" href="common/css/left_menu_layout.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="common/css/sidebar-menu.css">
+    <link rel="stylesheet" href="common/css/bubble-slider.css">
+    <link rel="stylesheet" href="common/css/easyui.css">
+
+    <link rel="stylesheet" href="common/css/index.css">
+    <!-- End layout css -->
+
+    <!-- Start favicon ico -->
+    <link rel="icon" href="http://www.17sucai.com/preview/1528155/2019-02-27/kj/assets/favicon/prince.ico"
+          type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="http://www.17sucai.com/preview/1528155/2019-02-27/kj/assets/favicon/prince-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="http://www.17sucai.com/preview/1528155/2019-02-27/kj/assets/favicon/prince-180x180.png">
+
+</head>
+<body class="nav-medium loadbar">
+<div class="container body">
+    <div class="main_container">
+        <!-- Start Loader -->
+
+        <!-- start Left Menu-->
+
+        <!-- End Left Menu -->
+        <!-- End Left Menu -->
+        <div class="col-md-3 left_color bg_bla">
+            <div class="left_color scroll-view">
+                <aside class="main-sidebar">
+                    <section class="sidebar">
+                        <ul class="sidebar-menu">
+                            <li class="header logo"><img src="common/images/logo@2x.png" alt="logo"
+                                                         class="img-responsive"></li>
+                            <li class="notice"><i class="fa fa-volume-up"></i>欢迎使用信自达设备管理系统</li>
+                            <li class="treeview ">
+                                <a href="#">
+                                    <i class="iconfont icon-ditu1"></i><span>首页 </span>
+                                </a>
+                            </li>
+
+                            <li class="treeview current_page">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="iconfont icon-deng1"></i>
+                                    <span class="menu-text"> 照明管理 </span>
+
+                                    <i class="iconfont icon-jia pull-right change_icon"></i>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li>
+                                        <a href="timeState.html" class="dropdown-toggle">
+                                            <i class="iconfont icon-xiangyou2"></i>
+                                            <span class="menu-text">  实时状态</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="control.html" class="dropdown-toggle">
+                                            <i class="iconfont icon-xiangyou2"></i>
+                                            <span class="menu-text">  集中控制</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="planIssued.html" class="dropdown-toggle">
+                                            <i class="iconfont icon-xiangyou2"></i>
+                                            <span class="menu-text">  方案下发</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="deviceManagement.html" class="dropdown-toggle">
+                                            <i class="iconfont icon-xiangyou2"></i>
+                                            <span class="menu-text">  设备管理</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timePlan.html" class="dropdown-toggle">
+                                            <i class="iconfont icon-xiangyou2"></i>
+                                            <span class="menu-text">  时间方案</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+        <!-- start top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu nav_menu_content">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="login_history">
+                        <div class="hello_txt"><span class="user_name">xxx</span>，欢迎回来</div>
+                        <div class="ip_adress">上次登录的IP地址：<span class="ip_num">188.188.188.18</span></div>
+                        <div class="login_time">上次登录的时间：<span class="time_txt">2018-12-26 </span></div>
+                    </div>
+
+                    <div class="topbar-right">
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="home_link">
+                                <a href="#"><i class="fa fa-home"></i>首页</a>
+                            </div>
+                            <div class="dropdown header-notification right-icon home_link">
+                                <a href="javascript:" class="dropdown-toggle waves-effect waves-light notification-icon"
+                                   data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+
+                                    <span class="label label-danger">5</span>
+                                </a>
+                                <span class="note">消息</span>
+                                <ul class="dropdown-menu">
+                                    <li class="text-center">
+                                        <p class="notification-title">Notification<span
+                                                class="label label-primary">4</span></p>
+                                    </li>
+                                    <div class="slimScrollDiv"
+                                         style="position: relative; overflow: hidden; width: auto; height: 250px;">
+                                        <li class="list-group default-scroll"
+                                            style="overflow: hidden; width: auto; height: 250px;">
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Domance Den</span> posted a
+                                                            photo on
+                                                            your wall.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Wikko Menta</span> commented on
+                                                            your
+                                                            last video.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Jonny Sem</span> posted 4
+                                                            comments
+                                                            on your photo.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Doli Senga</span> posted a photo
+                                                            on
+                                                            your wall.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Bhura Kenta</span> commented on
+                                                            your
+                                                            last video.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="list-group-item">
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <img src="common/images/user10.jpg" alt="user">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading"><span>Jolly Baby</span> posted 2
+                                                            comments
+                                                            on your photo.</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </li>
+                                        <div class="slimScrollBar"
+                                             style="background: rgb(170, 170, 170); width: 5px; position: absolute; top: 0px; opacity: 0; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+                                        <div class="slimScrollRail"
+                                             style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+                                    </div>
+                                    <li class="all-notification">
+                                        <a href="javascript:;" class="list-group-item text-right">
+                                            <small>See all notifications</small>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home_link">
+                                <a href="#"><img src="common/images/xitong@2x.png" alt="">系统管理</a>
+                            </div>
+                            <div class="home_link">
+                                <a href="#" onClick="javascript:history.back()"><i class="fa fa-reply"></i>返回</a>
+                            </div>
+                            <div class="dropdown user-profile right-icon anvant_border">
+                                <a href="javascript:" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="false">
+                                    <img src="common/images/user10.jpg" alt="user">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:" class="waves-effect waves-light">
+                                        <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                                    </li>
+                                    <li><a href="javascript:" class="waves-effect waves-light">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+                                    </li>
+                                    <li><a href="javascript:" class="waves-effect waves-light">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>Lock screen</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="javascript:" class="waves-effect waves-light">
+                                        <i class="fa fa-power-off text-danger" aria-hidden="true"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="page-main-header page_title">
+            <!-- Page Title -->
+            <h2 class="page-name-title"><i class="iconfont icon-deng1"></i><span>照明管理</span></h2>
+            <!--  Breadcrumb -->
+            <ol class="breadcrumb breadcrumb_content"><span class="here_txt">你在这里：</span>
+                <li>
+                    <a href="timeState.html">设备管理</a>
+                </li>
+
+                <li class="text-info">照明管理</li>
+
+            </ol>
+        </div>
+        <div class="container-fluid right_color main_box user_page">
+            <div class="lamp_list  time_state group_list">
+                <table id="group1" class="bg_white"></table>
+
+                <div id="toolbar" class="btn-group clearfix">
+                    <p class="table_title left">
+                        设备分组:
+                    </p>
+                    <a href="addGroup.html" class="add_lamp_btn control_btn add_group_btn add_group right">
+                        添加分组
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="back-to-top">
+        <i class="iconfont icon-huidaodingbu"></i>
+    </div>
+
+</div>
+
+</div>
+
+
+<!--!&#45;&#45; Start core js &ndash;&gt;-->
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/jquery.easyui.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/jquery.slimscroll.js"></script>
+<script src="common/js/left-menu.min.js"></script>
+<script src="common/js/sidebar-menu.js"></script>
+<script src="common/js/echarts.js"></script>
+<script src="common/js/jquery.bubble-slider.js"></script>
+<script src="common/js/waterfall.js"></script>
+
+<script src="common/js/index.js"></script>
+<script>
+    $.sidebarMenu($('.sidebar-menu'))
+
+</script>
+<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+<!-- 引入中文语言包 -->
+<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
+
+<script>
+
+    $(function () {
+        //1.初始化Table
+        var oTable = new TableInit();
+        oTable.Init();
+        //2.初始化Button的点击事件
+        var oButtonInit = new ButtonInit();
+        oButtonInit.Init();
+    });
+    var TableInit = function () {
+        var oTableInit = new Object();
+        //初始化Table
+        oTableInit.Init = function () {
+            $('#group').bootstrapTable({
+                url: 'data2.json',         //请求后台的URL（*）
+                method: 'get',                      //请求方式（*）
+                toolbar: '#toolbar',                //工具按钮用哪个容器
+                striped: true,                      //是否显示行间隔色
+                cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                pagination: true,                   //是否显示分页（*）
+                sortable: false,                     //是否启用排序
+                sortOrder: "asc",                   //排序方式
+                queryParams: oTableInit.queryParams,//传递参数（*）
+                // sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+                pageNumber: 1,                       //初始化加载第一页，默认第一页
+                pageSize: 10,                       //每页的记录行数（*）
+                pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+                search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+                contentType: "application/x-www-form-urlencoded",
+                strictSearch: true,
+                showColumns: false,                  //是否显示所有的列
+                showRefresh: false,                  //是否显示刷新按钮
+                minimumCountColumns: 2,             //最少允许的列数
+                clickToSelect: true,                //是否启用点击选中行
+                uniqueId: "no",                     //每一行的唯一标识，一般为主键列
+                showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
+                cardView: false,                    //是否显示详细视图
+                detailView: false,                   //是否显示父子表
+                // dataClickToSelect:true,
+                checkboxHeader: true,
+                selectItemName: '',
+
+                columns: [{
+                    checkbox: true,
+                    visible: true                  //是否显示复选框
+                },
+                    {
+                        field: 'id',
+                        title: '序号',
+                        align: 'center',
+                        valign: 'middle',
+                    },
+
+                    {
+                        field: 'group_name',
+                        title: '分组名称',
+                        align: 'center',
+                        valign: 'middle',
+                    },
+
+                    {
+                        field: 'quantity',
+                        title: '灯杆数量',
+                        align: 'center',
+                        valign: 'middle',
+                        // formatter: emailFormatter //自定义方法，添加操作按钮
+                    },
+
+                    {
+                        field: 'remove',
+                        title: '删除',
+                        align: 'center',
+                        valign: 'middle',
+                        events: operateEvents3,
+                        formatter: operateFormatter3 //自定义方法，添加操作按钮
+                    },
+
+                    {
+                        field: 'operate',
+                        title: '详情',
+                        align: 'center',
+                        valign: 'middle',
+                        formatter: operateFormatter4 //自定义方法，添加操作按钮
+                    },
+                ],
+
+            });
+
+        };
+
+
+        //得到查询的参数
+        oTableInit.queryParams = function (params) {
+            var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                limit: params.limit,   //页面大小
+                offset: params.offset,
+                sort: params.sort,      //排序列名
+                sortOrder: params.order //排位命令（desc，asc）
+            };
+            return temp;
+        };
+        return oTableInit;
+    };
+    var ButtonInit = function () {
+        var oInit = new Object();
+        var postdata = {};
+
+        oInit.Init = function () {
+            //初始化页面上面的按钮事件
+        };
+
+        return oInit;
+    };
+
+
+    // 返回自动
+    function operateFormatter3(value, row, index) {//赋予的参数
+        return [
+            '<a class="btn_t  active remove" href="#" >删除</a>',
+        ].join('');
+    }
+
+    window.operateEvents3 = {
+        'click .remove':function (e, value, row, index) {
+            $('#group1').bootstrapTable('remove', {
+                field: 'id',
+                values: [row.id]
+            });
+        }
+    }
+    // 详情
+    function operateFormatter4(value, row, index) {//赋予的参数
+        return [
+            '<a class="btn_t  active close_list " href="#" onClick="javascript:history.back()" >收起列表</a>',
+        ].join('');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+​
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "0",
+    "group_name": "信自达智慧灯杆 0",
+    "quantity": "20",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+
+  }
+
+]

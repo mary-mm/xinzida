@@ -1,0 +1,212 @@
+[
+  {
+    "id": "0",
+    "group_name": "信自达智慧灯杆 0",
+    "quantity": "0",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "full_open": true,
+    "full_close": false
+  },
+  {
+    "id": "1",
+    "group_name": "信自达智慧灯杆 1",
+    "quantity": "1",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": true,
+    "full_open": false,
+    "full_close": true
+  },
+  {
+    "id": 2,
+    "group_name": "信自达智慧灯杆 2",
+    "quantity": "2",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 3,
+    "group_name": "信自达智慧灯杆 3",
+    "quantity": "3",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 4,
+    "group_name": "信自达智慧灯杆 4",
+    "quantity": "4",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 5,
+    "group_name": "信自达智慧灯杆 5",
+    "quantity": "5",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 6,
+    "group_name": "信自达智慧灯杆 6",
+    "quantity": "6",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 7,
+    "group_name": "信自达智慧灯杆 7",
+    "quantity": "7",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 8,
+    "group_name": "信自达智慧灯杆 8",
+    "quantity": "8",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 9,
+    "group_name": "信自达智慧灯杆 9",
+    "quantity": "9",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 10,
+    "group_name": "信自达智慧灯杆 10",
+    "quantity": "10",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 11,
+    "group_name": "信自达智慧灯杆 11",
+    "quantity": "11",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 12,
+    "group_name": "信自达智慧灯杆 12",
+    "quantity": "12",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 13,
+    "group_name": "信自达智慧灯杆 13",
+    "quantity": "13",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 14,
+    "group_name": "信自达智慧灯杆 14",
+    "quantity": "14",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 15,
+    "group_name": "信自达智慧灯杆 15",
+    "quantity": "15",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 16,
+    "group_name": "信自达智慧灯杆 16",
+    "quantity": "16",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 17,
+    "group_name": "信自达智慧灯杆 17",
+    "quantity": "17",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 18,
+    "group_name": "信自达智慧灯杆 18",
+    "quantity": "18",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 19,
+    "group_name": "信自达智慧灯杆 19",
+    "quantity": "19",
+    "online_state": "在线",
+    "control_model": "远程手动",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  },
+  {
+    "id": 20,
+    "group_name": "信自达智慧灯杆 20",
+    "quantity": "20",
+    "online_state": "在线",
+    "control_model": "设定方案",
+    "automatic_return": false,
+    "full_open": false,
+    "full_close": false
+  }
+]
