@@ -1,0 +1,302 @@
+html,
+body {
+    height: 100% !important;
+}
+
+.loginMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: 100%;
+    background-image: url('../../admin/common/images/bg@3x.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+.loginHeader {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.insertMain {
+    background-color: #fff;
+    padding: 25px 33px;
+    min-width: 400px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.iMCol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.iMCol a {
+    text-decoration: none !important;
+}
+
+.iMCol>div:first-child {
+    height: 18px;
+}
+
+.iMCol>div:first-child a:hover {
+    font-size:22px;
+    color: #535353;
+}
+
+.iMCol .active {
+    font-size: 22px !important;
+    color: #000 !important;
+    border-bottom: 3px solid #1caf9a;
+}
+
+.iMCol>div:first-child a {
+    font-size: 18px;
+    transition:font-size 0.5s;
+}
+
+
+.iMCol>div:last-child a {
+    font-size: 12px;
+}
+
+.iMCol>div:first-child a:first-child {
+    margin-right: 15px;
+}
+
+.iMCol a {
+    color: #535353;
+}
+
+.iMMain>div>div {
+    margin-top: 14px;
+}
+
+.iMMain p {
+    color: #535353;
+    font-size: 14px;
+    margin-bottom: 6px;
+
+}
+
+#myTabContent input {
+    border: 1px solid #9B9B9B;
+    width: 100%;
+    text-indent: 14px;
+    /*padding: 5px 0;*/
+    font-size: 12px;
+    line-height: 35px;
+    border-radius: 4px;
+}
+.iMMain input:focus{
+    outline:1px solid #1caf9a;
+}
+
+
+.iMTips span {
+    color: #535353;
+    font-size: 12px;
+}
+
+.confirmBun {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.confirmBun button {
+    background: rgba(28, 175, 154, 1);
+    border: 0;
+    color: #fff;
+    padding:0 30px;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.iMTips {
+    display: flex;
+    align-items: center;
+    /*margin-top: 14px;*/
+}
+
+.iMTips>.checkbox {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #CDCDCD;
+    margin-right: 6px;
+    margin-top: 0;
+}
+
+
+.iMTips .active {
+    background-color: #1caf9a;
+    border-color: #000 !important;
+}
+
+.iMCol {
+    position: relative;
+}
+
+.iMLanguage {
+    position: absolute;
+    left: 130%;
+    background-color: #fff;
+    padding: 8px 10px;
+    min-width: 100px;
+    top: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.iMLanguage > div img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.iMLanguage > div:last-child {
+    margin-bottom: 0;
+}
+
+.iMLanguage > a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    min-width: 120px;
+    margin-bottom: 10px;
+    color: #9B9B9B;
+}
+
+.codeIn {
+    position: relative;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*padding-bottom: 15px;*/
+}
+.code{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+#code_btn{
+
+    position: absolute;
+    top:0;
+    right: 0;
+    text-indent: 0;
+    background: #1caf9a;
+    color: #fff;
+}
+#myTabContent{
+    margin-top: 30px;
+}
+.tab-content>div,.languge_content{
+    display: none;
+}
+#myTabContent>.active{
+    display: block;
+}
+.nav>li>a{
+    color: #535353;
+    font-size: 16px;
+    font-family: Segoe UI;
+    margin-right: 25px;
+    float: left;
+    line-height: 24px;
+    background: #fff;
+    padding: 0;
+
+}
+.nav>li>a:hover{
+    color: #535353;
+    background: #fff!important;
+}
+.nav>.active>a{
+  border-bottom: 3px solid #1caf9a;
+    font-size: 20px;
+    color: #535353;
+
+    background: #fff!important;
+}
+.insertMain{
+    position: relative;
+    max-width: 440px;
+    margin: 0 auto;
+}
+.languge_downmenu{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    z-index: 9;
+}
+.languge_downmenu>.btn,.languge_downmenu>.btn:hover{
+    border: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #535353;
+
+}
+.tab-content{
+   padding-top: 15px;
+
+}
+.tab_item_input{
+    /*margin-top: 15px;*/
+
+}
+.tab_item_input>.input_label{
+
+}
+.tab_item_input>.tab_input{
+
+}
+.tab_item_input>.tab_input>input{
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #ddd;
+    line-height: 35px;
+    color: #9B9B9B;
+    font-size: 12px;
+    text-indent: 14px;
+}
+.languge_downmenu>ul>li>a{
+    padding:3px 0;
+    font-size: 12px;
+    color: #9B9B9B;
+}
+.languge_downmenu>ul>li>img{
+    width: 22px;
+}
+.login_title{
+    font-size: 35px;
+}
+.login_txt{
+    font-size: 14px;
+}
+.codeIn{
+    display: block;
+    height: 55px;
+
+}
+.codeIn>.code{
+    width: calc(100% - 170px)!important;
+
+}
+#code_btn{
+    width: 160px;
+
+}
+.codeIn .Validform_checktip{
+   position: absolute;
+    top:35px;
+    left: 0;
+    z-index: 99;
+}
